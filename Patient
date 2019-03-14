@@ -1,0 +1,65 @@
+using System;
+
+namespace Patient
+{
+    public class Patient
+    {
+        int patientNumber; //The patient number
+        int insuranceNumber; // The patient insurance number
+        string allergies; // The patient allergies (will be in a array)
+        string dependants; // The patient dependants (will be in a array)
+        string conditions; // The patient conditions (will be in a array)
+        double outstandingBalance; //If the patient got any outstanding balance
+        string bloodType; // The patient blood type
+
+
+        Patient() { } //default constuctor
+
+        Patient(int patientNumber, int insuranceNumber, string allergies, string dependants, string conditions, double outstandingBalance, string bloodType)
+        {
+            this.patientNumber = patientNumber;
+            this.insuranceNumber = insuranceNumber;
+            this.allergies = allergies;
+            this.dependants = dependants;
+            this.conditions = conditions;
+            this.outstandingBalance = outstandingBalance;
+            this.bloodType = bloodType;
+        } //End of the constuctor
+
+        public int PatientNumber{
+            set { this.patientNumber = value; }
+            get { return this.patientNumber; }
+        }
+
+        public int InsuranceNumber{
+            set { this.insuranceNumber = value; }
+            get { return this.insuranceNumber; }
+        }
+
+        public string Allergies{
+            set { this.allergies = value; }
+            get { return this.allergies; }
+        }
+
+        public string Dependants{
+            set { this.dependants = value; }
+            get { return this.dependants; }
+        }
+        
+        public string Conditions{
+            set { this.conditions = value; }
+            get { return this.conditions; }
+        }
+
+        public double OutstandingBalance
+        {
+            set { this.outstandingBalance = value; }
+            get { return this.outstandingBalance; }
+        }
+
+        public string BloodType {
+            set {this.bloodType = value; }
+            get {return this.bloodType; }
+        }
+    }
+}
