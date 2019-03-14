@@ -1,0 +1,74 @@
+using System;
+
+namespace Appointment
+{
+    public class PatientReceipt
+    {
+       
+        int patientNumber; //Patient's ID number
+        String firstName; //Patient's first name
+        String lastName; //Patient's last name
+        String dlastName; //Doctor's last name
+        double patientTotal; //Total for patient
+        double amountPaid; //The amount of money that the patient has paid
+
+
+        PatientReceipt() { } //Default Constructor
+
+        PatientReceipt(int patientNumber, String firstName, String lastName, String dlastName, double patientTotal, double amountPaid)
+        {
+            this.patientNumber = patientNumber;
+            this.firstName = firstName;
+            this.lastName = lastName;
+            this.dlastName = dlastName;
+            this.patientTotal = patientTotal;
+            this.amountPaid = amountPaid;
+        }
+        
+        
+
+        public int GetPatientNumber
+        {
+            set{ this.patientNumber = value; }
+
+            get { return this.patientNumber; }
+
+        }
+
+        public String GetFirstName
+        {
+            set { this.firstName = value; }
+
+            get { return this.firstName; }
+        }
+
+        public String GetLastName
+        {
+            set { this.lastName = value; }
+
+            get { return this.lastName;  }
+        }
+
+        public String GetDlastName
+        {
+            set { this.dlastName = value; }
+
+            get { return this.dlastName; }
+        }
+
+        public double GetPatientTotal
+        {
+            set { this.patientTotal = value; }
+
+            get { return this.patientTotal; }
+        }
+
+        public double GetAmountPaid
+        {
+            set { this.amountPaid = value; }
+
+            get { return this.amountPaid; }
+
+        }
+    }
+}
