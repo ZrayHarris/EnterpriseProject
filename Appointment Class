@@ -1,0 +1,30 @@
+class Appointment
+  {
+        string firstName;
+        string middleName;
+        string lastName;
+        int insNum;
+        int time;
+        Date date;
+        Date appdate;
+        float total;
+
+
+        public void newAppointment(string fn, string mn, string ln, int ins,
+            int time, int day, int mont, int year, int appDay, int appMonth, float total)
+        {
+            this.firstName = fn;
+            this.middleName = mn;
+            this.lastName = ln;
+            this.insNum = ins;
+            this.time = time;
+            appdate.day = appDay;
+            appdate.month = appMonth;
+            date.day = day;
+            date.month = mont;
+            date.year = year;
+            this.total = total;
+
+        }
+}
+}
