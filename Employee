@@ -1,0 +1,46 @@
+using System;
+
+namespace Employee
+{
+    public class Employee
+    {
+        string empType;           //Type of employee
+        int officeHrs;           //Amount of hours when each department will be opened
+        int dept_id;            //Unique identifier for department Name
+        string deptName;       //Name of the department
+
+        Employee() { }        //Default Construcor
+
+        Employee(string empType, int officeHrs, int dept_id, string deptName)
+        {
+            this.empType = empType;
+            this.officeHrs = officeHrs;
+            this.dept_id = dept_id;
+            this.deptName = deptName;
+        }
+
+        public string EmpType
+        {
+            set {this.empType = value;}
+            get {return this.empType;}
+        }
+        
+            public int OfficeHrs
+        {
+            set {this.officeHrs = value;}
+            get {return this.officeHrs;}
+        }
+
+        public int Dept_Id
+        {
+            set {this.dept_id = value;}
+            get {return this.dept_id;}
+        }
+
+        public string DeptName
+        {
+            set {this.deptName = value;}
+            get {return this.deptName;}
+        }
+    }
+}
