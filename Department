@@ -1,0 +1,48 @@
+using System;
+
+namespace Department
+{
+    public class Department
+    {
+        string name;
+        int deptnum;
+        string[] doctors = new string[] { };
+        string[] nurses = new string[] { };
+
+        Department() { }
+
+        Department(string name, int deptnum, string[] doctors, string[] nurses)
+        {
+            this.name = name;
+            this.deptnum = deptnum;
+            this.doctors = doctors;
+            this.nurses = nurses;
+        }
+
+        public string Name
+        {
+            set {this.name = value;}
+            get {return this.name;}
+        }
+
+        public int DeptNum
+        {
+            set {this.deptnum = value;}
+            get {return this.deptnum;}
+        }
+
+        public string[] Doctors
+        {
+            set {this.doctors = value;}
+            get {return this.doctors;}
+        }
+
+        public string[] Nurses
+        {
+            set {this.nurses = value;}
+            get {return this.nurses;}
+        }
+        
+    }
+   
+}
