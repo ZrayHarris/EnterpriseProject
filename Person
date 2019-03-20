@@ -1,0 +1,74 @@
+using System;
+
+
+namespace Person
+{
+    public class Person
+    {
+        string fName; //The person first name
+        string mName; //The person middle name
+        string lName; //The person last name
+        string address; //The person address
+        string phoneNumber; //The person phone number
+        string email; //The person email
+
+       //DateTime birthDate; The data type DateTime is not figure out yet
+        
+
+        public Person() { }
+
+        public Person(string fName, string mName, string lName, string address, string phoneNumber, string email /*DateTime birthDate*/)
+        {
+            this.fName = fName;
+            this.mName = mName;
+            this.lName = lName;
+            this.address = address;
+            this.phoneNumber = address;
+            this.email = email;
+            //this.birthDate = birthDate;
+        }
+
+
+        public string FName
+        {
+            set { this.fName = value; }
+            get { return this.fName; }
+        }
+
+        public string MName
+        {
+            set { this.mName = value; }
+            get { return this.mName; }
+        }
+
+        public string LName
+        {
+            set { this.lName = value; }
+            get { return this.lName; }
+        }
+
+        public string Address
+        {
+            set { this.address = value; }
+            get { return this.address; }
+        }
+
+        public string PhoneNumber
+        {
+            set { this.phoneNumber = value; }
+            get { return this.phoneNumber; }
+        }
+
+        public string Email
+        {
+            set { this.email = value; }
+            get { return this.email; }
+        }
+
+        /*public DateTime BirthDate
+        {
+            set { this.birthDate = value; }
+            get { return this.birthDate; }
+        }*/
+    }
+}
